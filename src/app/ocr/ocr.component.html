@@ -1,0 +1,34 @@
+<!--<div>
+  <h2>Upload Image for Text Extraction</h2>
+  <input class="form-control" type="file" (change)="onFileSelected($event)" />
+&lt;!&ndash;  @if(loading){&ndash;&gt;
+  <div *ngIf="loading">Processing image...</div>
+&lt;!&ndash;  }&ndash;&gt;
+  <div *ngIf="!loading">
+    <div class="row mt-3">
+      <div class="col-8">
+        <input class="form-control" type="text" placeholder="Enter text to search" [(ngModel)]="searchText">
+      </div>
+      <div class="col-4">
+        <button class="btn btn-primary" type="button" (click)="search()">Search</button>
+      </div>
+      <div class="mt-2 text-success">{{searchResult}}</div>
+    </div>
+
+
+    <h3>Extracted Text:</h3>
+    <div class="card">
+      <div class="card-body">
+        <div [innerHTML]="extractedText | highlight: searchText"></div>
+      </div>
+    </div>
+  </div>
+
+
+&lt;!&ndash;  }  @if(extractedText) {&ndash;&gt;
+</div>-->
+<input type="file" (change)="onFileSelected2($event)" accept="application/pdf">
+<!--<pre>{{ template }}</pre>-->
+<div class="summary-container">
+  <div [innerHTML]="template"></div>
+</div>
