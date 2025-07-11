@@ -5,7 +5,7 @@ import {HttpClient, HttpHeaders} from "@angular/common/http";
 })
 export class GeminiService {
   private apiUrl = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent';
-  private apiKey = 'AIzaSyCmred7l5C6qO8biawPI_e7_ihgWrhzMu8'; // Replace with your actual API key
+  private apiKey = '***'; // Replace with your actual API key
 
   constructor(private http: HttpClient) {
   }
